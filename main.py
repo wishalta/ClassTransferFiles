@@ -1,4 +1,6 @@
+from Plant import Plant
 from Book import Book
+
 
 book1 = Book()
 book2 = Book()
@@ -30,6 +32,21 @@ book6.Release_year = 2005
 
 list = [ book1, book2, book3, book4, book5, book6]
 
-for x in list:
-    print(x)
+# for x in list:
+#     print(x)
 
+plant1 = Plant( 'Rose', 'Rosa', True, 'Australia', 1.2, False)
+plant2 = Plant( 'Tomato', 'Solanum lycopersicum', True, 'South America', 1.5, True)
+plant3 = Plant( 'Potato', 'Solanum tuberosum', True, 'South America', 0.6, True)
+plant4 = Plant()
+plant4.Name = 'Spruce'
+plant4.Latin_name = 'Picea'
+plant4.Is_annual = False
+plant4.Continent = 'Asia, Europe'
+plant4.Height = 60
+plant4.Eatable = False
+
+plants = [ plant1, plant2, plant3, plant4]
+
+for i in plants:
+    print(i)
